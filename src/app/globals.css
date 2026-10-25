@@ -1,0 +1,55 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --color-olive: #343B2A;
+  --color-olive-dark: #24291D;
+  --color-botanical: #72785E;
+  --color-ivory: #F5F0E6;
+  --color-sand: #E8DFD0;
+  --color-text: #292A24;
+  --color-muted: #77766C;
+  --color-border: #D8D0C3;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-text);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Luxury Editorial Headings */
+h1, h2, h3, .font-serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* Custom Scrollbar in Luxury Olive/Sand */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E8DFD0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #72785E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #343B2A;
+}
+
+/* Subtle selection highlight */
+::selection {
+  background-color: #343B2A;
+  color: #F5F0E6;
+}
